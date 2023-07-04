@@ -1,0 +1,113 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+/* swiper-bullets стили для свайпера(топ 2022) */
+.swiper-pagination-bullet {
+	width: 10px;
+	height: 10px;
+	margin: 0 15px;
+    background-color: black;
+	opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+	background-color: navy;
+}
+
+
+.swiper-container {
+	padding-bottom: 50px;
+}
+
+.slider {
+	display: flex;
+	background-color: #111;
+}
+
+.slider-nav {
+	overflow: hidden;
+	width: 100px;
+	margin-right: 10px;
+	flex-shrink: 0;
+	height: 500px;
+}
+
+.slider-main {
+	overflow: hidden;
+	height: 500px;
+	width: 800px;
+	margin: 0 0 0 20px;
+}
+
+.slider-nav .swiper-slide {
+	width: 100px;
+	height: 100px;
+}
+
+.slider-nav .swiper-slide img {
+	max-height: 100%;
+}
+
+.slider-container {
+	max-width: 1200px;
+	padding: 0 15px;
+	position: relative;
+	margin: 10px auto;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+	background-color: #fff;
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 20px 20px;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+	display: none;
+}
+
+.swiper-button-prev {
+	background-image: url("back.svg");
+}
+
+.swiper-button-next {
+	background-image: url("right.svg");
+}
+
+.slider-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.slider-buttons {
+	display: flex;
+	align-items: center;
+}
+
+h1{
+	color: aliceblue;
+}
+h2{
+	color: aliceblue;
+}
+p{
+	color: aliceblue;
+	overflow: hidden;
+}
+@media (max-width:400px) {
+	.slider-container {
+		margin: -10px auto;
+	}
+}

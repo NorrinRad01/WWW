@@ -1,0 +1,406 @@
+main {
+	display: block;
+}
+
+.content {
+	background-color: black;
+	border: 1px solid rgba(0, 0, 0, .125);
+}
+
+.p-3 {
+	padding: 1rem;
+	height: 550px;
+	margin-right: 150px;
+}
+
+
+.movies {
+	color: #fff;
+	overflow: hidden;
+	padding: 30px 0px 0px 100px;
+	height: 1800px;
+}
+
+.movies a {
+	color: #fff;
+}
+
+.movies-center {
+	float: left;
+	position: relative;
+	width: 500px;
+	padding-left: 80px;
+}
+
+.movies-center h1 {
+	text-align: left;
+	font-size: 55px;
+	margin: 0;
+	width: auto;
+	height: auto;
+}
+
+.movies-center span {
+	text-align: left;
+	font-size: 35px;
+
+}
+
+.movies-center h2 {
+	color: #878787;
+	font: 400 italic 16px georgia, serif;
+	margin: 10px 0;
+}
+
+.movies-center .h3 {
+	font-size: 18px;
+	font-weight: 400;
+	margin: 0 0 20px 0;
+}
+
+.movies-center-table {
+	display: table;
+	float: left;
+	width: 335px;
+}
+
+.movies-center-table a {
+	color: #fff;
+}
+
+.movies-center-table div {
+	display: table-row;
+}
+
+.movies-center-table strong {
+	display: table-cell;
+	font-weight: 400;
+	padding: 0 0 20px 0;
+	width: 50%;
+}
+
+.movies-center-table .h3 {
+	color: #878787;
+	padding: 0 20px 20px 0;
+	white-space: nowrap;
+}
+
+.movies-left {
+	float: left;
+	margin-top: 10px;
+	position: relative;
+	width: 240px;
+}
+
+.movies-left img {
+	height: 400px;
+	object-fit: cover;
+	width: 290px;
+	padding: 15px 5px 15px 25px;
+}
+
+
+
+.movies-trailers {
+	height: 440px;
+	margin-left: -20px;
+	overflow: hidden;
+	position: relative;
+	width: 960px;
+}
+
+.movies-trailers img {
+	height: 440px;
+	object-fit: cover;
+	width: 960px;
+}
+
+@media only screen and (max-width:750px) {
+	.movies {
+		padding: 50px 20px 0px 5px;
+	}
+
+	.movies-center {
+		width: auto;
+		height: auto;
+	}
+
+	.movies-center h1 {
+		text-align: left;
+		font-size: 25px;
+	}
+
+	.movies-center .h2 {
+		text-align: left;
+		font-size: 16px;
+	}
+
+	.movies-center-table .h3 {
+		text-align: left;
+		font-size: 14px;
+		margin: 2px 1em 1em auto;
+
+	}
+
+	.movies-center-table strong {
+		display: flex;
+		text-align: left;
+		font-weight: 200;
+		padding: 1px;
+
+	}
+
+}
+
+block2 {
+	display: block;
+}
+
+.content2 {
+	background-color: black;
+	border: 1px solid rgba(0, 0, 0, .125);
+}
+
+.p-4 {
+	padding: 1rem;
+	margin: 15px 15px 0 0;
+	height: auto;
+	margin-right: 150px;
+}
+
+/* video*/
+video {
+	position: relative;
+	width: 600px;
+	height: auto;
+	margin: 0px;
+}
+
+.text {
+	text-align: center;
+	font-size: 30px;
+	margin: 5px auto 20px;
+}
+
+.personnel {
+	float: right;
+	margin: 10px;
+}
+
+.personnel img {
+	height: 210px;
+	width: 140px;
+	padding: 15px 5px 0px 5px;
+}
+
+/* стили для первоо слайдера POster*/
+#container{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20px auto 0px;
+}
+.slider-box{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+}
+.slider-img{
+	width: 150px;
+	height: auto;
+	border-radius: 10px 10px 0 0;
+	overflow: hidden;
+	margin: 0 10px;
+}
+.slider-img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: right;
+}
+.slider-details{
+	padding: 5px;
+	background: linear-gradient(90deg, #202020 20%, #222222);
+	width: 150px;
+	border-radius: 0 0 10px 10px;
+	overflow: hidden;
+	margin: -4px 10px;
+}
+.slider-details strong{
+	color: #e4e4e4;
+	font-size: 0.9em;
+	font-weight: 200;
+}
+
+.card-btns p{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 2px;
+	color: #8f8f8f;
+}
+
+/* image slider */
+.sliderImage{
+	width: 950px;
+	height: 500px;
+	border-radius: 10px;
+	overflow: hidden;
+	margin: 0px 0px 0px 175px;
+	justify-content: center;
+	align-items: center;
+}
+.slides{
+	width: 510%;
+	height: 500px;
+	display: flex;
+}
+.slides input{
+	display: none;
+}
+.slide{
+	width: 20%;
+	transition: 2s;
+}
+.slide img{
+	width: 950px;
+	height: 500px;
+}
+/* manual slide navigation */
+.navigation-manual{
+    position: absolute;
+	width: 950px;
+	margin-top: -40px;
+	display: flex;
+	justify-content: center;
+}
+.manual-btn{
+	border: 4px solid #40d3dc;
+	padding: 12px;
+	border-radius: 16px;
+	cursor: pointer;
+	transition: 1s;
+}
+.manual-btn:not(:last-child){
+	margin-right: 40px;
+}
+.manual-btn:hover{
+	background: #40d3dc;
+}
+
+#radio:checked ~ .first{	
+    margin-left: 0;
+}
+#radio2:checked ~ .first{	
+    margin-left: -20%;
+}
+#radio3:checked ~ .first{	
+    margin-left: -40%;
+}
+#radio4:checked ~ .first{	
+    margin-left: -60%;
+}
+/* automatic navigation */
+.navigation-auto{
+	position: absolute;
+}
+.navigation-auto div{
+	border-radius: 2px solid #40d3dc;
+	padding: 5px;
+	border-radius: 10px;
+	transition: 1s;
+	display: none;
+}
+.navigation-auto div:not(:last-child){
+	margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+	background: #40d3dc;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+	background: #40d3dc;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+	background: #40d3dc;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+	background: #40d3dc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Главная страница */
+
+/* Главная страница (кассовые сборы и график выхода сериалов) */
+
+/* Главная страница (новинки онлайн, премьеры в кинотеатрах и премьеры сериалов) */
+
+/* Главная страница (новости) */
+
+/* Главная страница (карусель) */
+
+/* Главная страница (популярные материалы) */
+
+/* Главная страница (популярные персоны) */
+
+/* Главная страница (рецензии) */
+
+/* Главная страница (сегодня родились) */
+
+/* Градиент */
+
+/* Кнопки */
+/*.load:hover, #load_more:hover, .progress-disabled {
+*/
+
+/* Статичная страница */
+
+/* Телепрограмма фильмов на неделю */
+
+/* Сериалы */
+
+/* Тест */
+
+/* Общие стили */
+
+/* Быстрый поиск */
+
+/* Результаты поиска */
+
+/* Расскажи друзьям */
+
+/* Близнецы */
+/*.head.onln {
+	height: 96px;
+	align-items: start;
+}*/
+/*#online_all_1, #online_all_2, #online_all_3, #online_all_4, #online_all_5 {
+	margin: 0 -145px 0 0;
+	width: 1100px;
+}*/
+
+
+/*#online_all_1 .online_all, #online_all_2 .online_all, #online_all_3 .online_all, #online_all_4 .online_all, #online_all_5 .online_all {
+	margin: 0;
+	width: 780px;
+}*/
+/*
+.online_all span {
+*/
+/*.online_sidebar .bot {
+	margin: auto 0 0 0;
+}*/

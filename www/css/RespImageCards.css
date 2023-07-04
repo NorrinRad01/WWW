@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap');
+
+
+
+.ContainerImg {
+    font-family: "Raleway", sans-serif;
+    /*   background: rgba(54, 25, 25, .5); */
+    margin: 20px 160px auto 160px;
+
+}
+
+.rowImg {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ImageCard {
+    position: relative;
+    flex: 25%;
+    max-width: 460px;
+    width: 250;
+    height: auto;
+    margin: 15px;
+    overflow: hidden;
+}
+
+.ImageCard img {
+    opacity: 1;
+    position: relative;
+    vertical-align: top;
+    transition: 0.6s;
+    transition-property: opacity;
+}
+
+.ImageCard:hover img {
+    opacity: 1;
+}
+
+.ImageCard .details {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+.ImageCard .details h2 {
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 40px;
+    transition: 0.6s;
+    transition-property: transform;
+}
+
+.ImageCard .details h2 span {
+    font-weight: 900;
+}
+
+.ImageCard:hover .details h2 {
+    transform: translateY(-30px);
+}
+
+.ImageCard .details p {
+    margin: 25px auto 0px;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    opacity: 0;
+    transition: 0.6s;
+    transition-property: opacity, transform;
+}
+
+.ImageCard:hover .details p {
+    opacity: 1;
+    transform: translateY(-40px);
+}
+
+.more {
+    position: absolute;
+    background: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    bottom: -60px;
+    transition: 0.6s;
+    transition-property: bottom;
+}
+
+.ImageCard:hover .more {
+    bottom: 0;
+}
+
+.more a:hover {
+    transition: all .3s;
+    color: rgb(94, 255, 201);
+}
+
+.more .read-more {
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.more .read-more span {
+    font-weight: 900;
+    color: #000;
+}
+
+.more .icon-links i {
+    color: #000;
+    font-size: 20px;
+}
+
+.more .icon-links a:not(:last-child) i {
+    margin-right: 10px;
+}
+
+@media (max-width: 1080px) {
+    .ContainerImg {
+        margin: 80px;
+    }
+
+    .ImageCard {
+        flex: 50%;
+        max-width: 560px;
+    }
+}
+
+@media (max-width: 400px) {
+    .ContainerImg {
+        margin: 5px;
+    }
+
+    .ImageCard {
+        flex: 30%;
+        height: auto;
+        margin: 5px;
+    }
+
+    .ImageCard .details {
+        margin: 0px 0 -50px 0;
+    }
+
+    .ImageCard .details h2 {
+        font-size: 10px;
+        margin-top: 4px;
+    }
+
+    .ImageCard:hover .details h2 {
+        transform: translateY(-0px);
+    }
+
+    .ImageCard .details p {
+        margin: 0;
+        font-size: 5px;
+    }
+
+    .ImageCard:hover .details p {
+        transform: translateY(-5px);
+    }
+
+    .more {
+        padding: 0px;
+        bottom: -14px;
+    }
+
+    .ImageCard:hover .more {
+        bottom: 0;
+    }
+
+    .more .read-more {
+        font-size: 6px;
+    }
+
+    .more .icon-links i {
+        color: #000;
+        font-size: 10px;
+    }
+
+    .more .icon-links a:not(:last-child) i {
+        margin-right: 3px;
+    }
+}
+
+/* image cards(категории "аниме и т.д" */
+
+.header2{
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin: 240px 0 0 245px;
+    font-size: 22px;
+}
+.container2 {
+    display: block;
+	height: auto;
+	padding: 0px 80px 0px 220px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.container2 .box {
+	position: relative;
+	margin: 10px;
+	box-sizing: border-box;
+
+}
+
+.container2 .box .imgBox {
+	width: 220px;
+	height: 310px;
+	position: relative;
+	overflow: hidden;
+    border-radius: 5px 5px 0 0;
+}
+
+.container2 .box .imgBox img {
+	max-width: 100%;
+	transition: transform 1.5s;
+}
+
+.container2 .box:hover .imgBox img {
+	transform: scale(1.2);
+}
+
+ .poster-v2__content {
+    display: block;
+    background-color: #fff;
+	padding: 7px;
+    margin-top: -34px;
+	transform: translateZ(0);
+    opacity: 0.8;
+}
+
+ .poster-v2__title {
+	overflow: hidden;
+	text-align: center;
+	white-space: nowrap;
+	color: black;
+	font-size: 17px;
+    opacity: 1;
+    font-weight: bold;
+}
+/* .poster-v2__title a:hover{
+    color: aquamarine;
+} */
